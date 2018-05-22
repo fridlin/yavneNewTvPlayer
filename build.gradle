@@ -1,0 +1,18 @@
+// Top-level build file where you can add configuration options com.nextcom.tvplayer.common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.3.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' } //google repo
+        maven { url "https://jitpack.io" }
+    }
+}
